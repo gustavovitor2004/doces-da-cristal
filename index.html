@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces da Cristal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff5f5;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        .navbar {
+            background-color: #ff4d94;
+            padding: 15px 0;
+        }
+        .navbar-brand, .nav-link {  
+            color: white !important;
+            font-weight: 400;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffe4e1 !important;
+        }
+        .hero {
+            background-image: url('https://i.pinimg.com/736x/ce/c0/ab/cec0ab24928610c34fae12ad0fb383c4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ff4d94;
+            text-shadow: 2px 2px 4px #00000080;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .section-title {
+            color: #ff4d94;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .btn-primary {
+            background-color: #ff4d94;
+            border-color: #ff4d94;
+            font-weight: 500;
+        }
+        .btn-primary:hover {
+            background-color: #e04385;
+            border-color: #e04385;
+        }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .whatsapp-btn:hover {
+            background-color: #20b358;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #3616e91a;
+        }
+        footer {
+            background-color: #e04385;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Doces da Cristal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pedidos">Pedidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Doces da Cristal</h1>
+            <p>Doces artesanais feitos com amor para suas ocasiões especiais!</p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <p>Oi, eu sou a Cristal! Desde pequena, amo transformar ingredientes simples em doces que trazem alegria. Na Doces da Cristal, cada bolo, brigadeiro e sobremesa é feito com carinho e dedicação para tornar seus momentos especiais ainda mais doces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://cdn-productdbimages.barry-callebaut.com/sites/default/files/styles/mdp_web_gm_chocac-detail/public/externals/d73ed7c82007f2c7d6b1615a80920207.jpg?fit=crop&w=300&h=250&q=80" class="card-img-top" alt="Bolo de Chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolo de Chocolate</h5>
+                            <p class="card-text">Bolo fofinho com cobertura cremosa de chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://panelinhagrill.com.br/wp-content/uploads/2025/02/Brigadeiro-Gourmet-perfeito-veja-como-fazer-esse-brigadeiro.webp?fit=crop&w=300&h=250&q=80" class="card-img-top" alt="Brigadeiro Gourmet">
+                        <div class="card-body">
+                            <h5 class="card-title">Brigadeiro Gourmet</h5>
+                            <p class="card-text">Brigadeiros artesanais em vários sabores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://catracalivre.com.br/wp-content/uploads/2022/03/img-8977.jpg?fit=crop&w=300&h=250&q=80" class="card-img-top" alt="Torta de Limão">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de Limão</h5>
+                            <p class="card-text">Torta refrescante com creme de limão e merengue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pedidos -->
+    <section id="pedidos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Faça Seu Pedido</h2>
+            <div class="form-section">
+                <form id="orderForm" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="orderName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="orderName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="orderEmail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="orderEmail" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="orderPhone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="orderPhone" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="deliveryDate" class="form-label">Data de Entrega</label>
+                        <input type="date" class="form-control" id="deliveryDate" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="productSelect" class="form-label">Selecione o Produto</label>
+                        <select class="form-control" id="productSelect" required>
+                            <option value="" disabled selected>Escolha um produto</option>
+                            <option value="Bolo de Chocolate">Bolo de Chocolate</option>
+                            <option value="Brigadeiro Gourmet">Brigadeiro Gourmet</option>
+                            <option value="Torta de Limão">Torta de Limão</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="quantity" class="form-label">Quantidade</label>
+                        <input type="number" class="form-control" id="quantity" min="1" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="customization" class="form-label">Personalização (opcional)</label>
+                        <input type="text" class="form-control" id="customization" placeholder="Ex.: Tema de aniversário, sabor específico">
+                    </div>
+                    <div class="col-12">
+                        <label for="orderDetails" class="form-label">Detalhes Adicionais</label>
+                        <textarea class="form-control" id="orderDetails" rows="4" placeholder="Ex.: Para evento de 20 pessoas, sem glúten"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <label for="orderAddress" class="form-label">Endereço</label>
+                        <textarea class="form-control" id="orderAddress" rows="4" placeholder="Ex.: Rua João Silva, n. 30"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="form-section">
+                <form id="contactForm" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>📍 Rua das Flores, 123, Centro, Feira de Santana, Bahia, Brasil</p>
+    </footer>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/557599859615" target="_blank" class="whatsapp-btn" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Feedback simples para o formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+
+        // Feedback simples para o formulário de pedidos
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pedido enviado com sucesso! Entraremos em contato para confirmar.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
